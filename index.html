@@ -13,6 +13,8 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!--===================== Vanila CSS ===========================-->
     <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/aebcebbe2c.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -170,13 +172,13 @@
         </div>
 
         <div class="text-white col-lg-1">or</div>
-        <div class="col-lg-4">
-            <div class="second-section-border">
-                <div class="bg-white" data-cy="upload-square"><input data-cy="upload-input" data-testid="upload-input"
+        <div class="col-lg-4" id="drag-area">
+            <div id="upload-btn" class="second-section-border">
+                <div class="" data-cy="upload-square"><input data-cy="upload-input" id="upload-input" id="upload-input" data-testid="upload-input"
                         class="body-input"
                         accept="image/*,image/heic,image/heif,audio/mpeg,audio/wav,audio/aac,audio/ogg,audio/x-wav,audio/aac,audio/mp4,audio/x-m4a,audio/*,video/mp4,video/webm,video/*,video/3gpp,video/avi,video/x-flv,.mkv,video/x-ms-wmv"
-                        type="file" multiple="">
-                    <div class="bg-dark">
+                        type="file" multiple="" hidden/>
+                    <div id="drag-text" class="upload-text">
                         <div class="">
                             <div class="text-white">Click to upload<svg stroke="currentColor" fill="none"
                                     stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
@@ -190,11 +192,11 @@
                             </div>
                         </div>
                     </div>
-
+                    
                 </div>
             </div>
             <div class="mt-3">
-                <input type="text" class="form-control"
+                <input type="text" id="youtube-form" class="form-control"
                     placeholder="Paste an image or video URL (e.g. https://www.youtube.com/watch?v=C0DPdy98e4c)"
                     aria-label="Username" aria-describedby="basic-addon1">
             </div>
@@ -313,7 +315,66 @@
 
     </section>
 
-
+<!--------------------------------------- side navbar --------------------------------------->
+<nav class="side-nav">
+    <a href="#/media">
+        <i class="fa-solid fa-photo-film"></i>
+        Media
+    </a>
+    <a href="#">
+        <i class="fa-solid fa-photo-film"></i>
+        Layers
+    </a>
+    <a href="#">
+        <i class="fa-solid fa-photo-film"></i>
+        Text
+    </a>
+    <a href="#">
+        <i class="fa-solid fa-photo-film"></i>
+        Subtitles
+    </a>
+    <a href="#">
+        <i class="fa-solid fa-photo-film"></i>
+        Videos
+    </a>
+    <a href="#">
+        <i class="fa-solid fa-photo-film"></i>
+        Images
+    </a>
+    <a href="#">
+        <i class="fa-solid fa-photo-film"></i>
+        Elements
+    </a>
+    <a href="#">
+        <i class="fa-solid fa-photo-film"></i>
+        Audio
+    </a>
+    <a href="#">
+        <i class="fa-solid fa-photo-film"></i>
+        Transitions
+    </a>
+    <a href="#">
+        <i class="fa-solid fa-photo-film"></i>
+        Templates
+    </a>
+    <a href="#">
+        <i class="fa-solid fa-photo-film"></i>
+        Plugins
+    </a>
+    <a href="#">
+        <i class="fa-solid fa-photo-film"></i>
+        Record
+    </a>
+    <a href="#">
+        <i class="fa-solid fa-photo-film"></i>
+        More
+    </a>
+    <a href="#">
+        <i class="fa-solid fa-photo-film"></i>
+        Help
+    </a>
+    </nav>
+    
 
 
 
@@ -324,6 +385,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
+
+    <!-- custom js -->
+    <script src="/script.js"></script>
 </body>
 
 </html>

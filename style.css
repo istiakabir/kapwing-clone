@@ -1,5 +1,6 @@
 body {
     background-color: #252935;
+    overflow: hidden;
 }
 
 .vanila-navbar {
@@ -156,7 +157,23 @@ body {
     box-sizing: border-box;
     padding-top: 25px;
     transition: .2s;
+    height: 260px;
+    width: 760px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.second-section-border:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.067);
+}
+
+.second-section-border:hover .upload-text{
+    cursor: pointer;
+    background: transparent;
+    }
 
 .body-input {
 
@@ -164,6 +181,14 @@ body {
     cursor: pointer;
 
 
+}
+
+.upload-text{
+    background: transparent;
+}
+
+#youtube-form{
+    width: 750px;
 }
 
 .second-section-last-card {
@@ -197,3 +222,34 @@ body {
     font-size: 21px;
     font-weight: 600;
 }
+
+.side-nav{
+    position: fixed;
+    overflow-y: scroll;
+    top: 35px;
+    bottom: 0;
+    z-index: 0;
+    scrollbar-width: 0;
+}
+.side-nav::-webkit-scrollbar{
+    display: none;
+}
+.side-nav a{
+display: inline-block;
+height: 56px;
+width: 55px;
+font-size: 12px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 20px 0px 12px 0px;
+/* background-color: #191e2b; */
+border-radius: 50%;
+color: white;
+text-decoration: none;
+}
+.side-nav a:hover{
+    background-color: rgba(255, 255, 255, 0.067);
+}
+
