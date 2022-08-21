@@ -120,9 +120,32 @@ body {
 }
 
 .body-ratio-card {
-    text-align: center;
     color: #fff;
-    padding: 9px;
+
+}
+#first-size-box{
+    
+    width: 55.1487px;
+    height: 23.6352px;
+    
+}
+#second-size-box{
+    width: 52.2945px;
+    height: 29.4157px;
+}
+#third-size-box{
+    width: 42.4264px;
+    height: 42.4264px;
+}
+#fourth-size-box{
+    width: 37.4817px;
+    height: 46.8521px;
+}
+#last-size-box{
+    
+    width: 29.4157px;
+    height: 52.2945px;
+    
 }
 
 .second-section-border {
